@@ -1,0 +1,29 @@
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+
+<style>
+    @keyframes wipe-in-left {
+        from {
+        clip-path: inset(0 0 0 100%);
+        }
+        to {
+        clip-path: inset(0 0 0 0);
+        }
+    }
+    
+    [transition-style="in:wipe:left"] {
+        animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
+    }
+</style>
+<div>
+    <h1 transition-style="in:wipe:left">Summary</h1>
+</div>
+<div>
+    <h1 transition-style="in:wipe:left">Dedicated software engineering student with a solid foundation in Python, Flask, and relational databases, complemented by hands-on experience
+        in developing inventory and contact management systems to optimize workflows. Skilled in analyzing user requirements and delivering efficient,
+        scalable solutions through innovative projects. Passionate about leveraging technology to create impactful software solutions and continuously
+        seeking opportunities to grow professionally and embrace the latest advancements in the field.</h1>
+</div>
+
+{% endblock %}
