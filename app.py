@@ -10,5 +10,9 @@ def index():
 def aboutme():
     return render_template("aboutme.html")
 
+@app.route("/projects")
+def projects():
+    return render_template("project.html")
+
 if __name__ == "__main__":
     app.run(port=3023, debug=True)
