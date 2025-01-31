@@ -10,6 +10,7 @@ class app:
         self.index_route = "/"
         self.aboutme_route = "/aboutme"
         self.projects_route = "/projects"
+        self.test_route = "/test"
 
         # self.app.secret_key = "30696222g"
 
@@ -31,3 +32,7 @@ class app:
         @self.appFlask.route(self.projects_route)
         def projects():
             return render_template("projects.html")
+        
+        @self.appFlask.route(self.test_route)
+        def test():
+            return "test"
