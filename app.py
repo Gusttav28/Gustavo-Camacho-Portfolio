@@ -14,5 +14,9 @@ def aboutme():
 def projects():
     return render_template("projects.html")
 
+@app.route("/test")
+def test():
+    return "test"
+
 if __name__ == "__main__":
     app.run(port=3023, debug=True)
