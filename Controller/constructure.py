@@ -35,4 +35,4 @@ class app:
         
         @self.appFlask.route(self.test_route)
         def test():
-            return "test"
+            return "test2"
