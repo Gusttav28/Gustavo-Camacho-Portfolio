@@ -20,10 +20,29 @@
     <h1 transition-style="in:wipe:left">Summary</h1>
 </div>
 <div>
-    <h1 transition-style="in:wipe:left">Dedicated software engineering student with a solid foundation in Python, Flask, and relational databases, complemented by hands-on experience
+    <h3 transition-style="in:wipe:left">Dedicated software engineering student with a solid foundation in Python, Flask, and relational databases, complemented by hands-on experience
         in developing inventory and contact management systems to optimize workflows. Skilled in analyzing user requirements and delivering efficient,
         scalable solutions through innovative projects. Passionate about leveraging technology to create impactful software solutions and continuously
-        seeking opportunities to grow professionally and embrace the latest advancements in the field.</h1>
+        seeking opportunities to grow professionally and embrace the latest advancements in the field.</h3>
+</div>
+
+<style>
+    .background-image {
+        width: 100%;
+        height: 1000px;
+        background-image: url("{{ url_for('static', filename='imageportfolio.jpg') }}");
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    
+</style>
+
+<div class="background-image">
+    <p>Text over the background image</p>
 </div>
 
 {% endblock %}
