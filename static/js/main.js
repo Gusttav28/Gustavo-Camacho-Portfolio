@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const closebutton  = document.querySelector(".fixed .flex button")
     const mobilMenu = document.querySelector(".lg\\:hidden[role='dialog']")
     const content = document.getElementById("content")
+    const navlinks = document.getElementById(".lg\\:hidden a")
 
     menuButton.addEventListener("click", function () {
         mobilMenu.style.display = "block";
@@ -11,6 +12,28 @@ document.addEventListener("DOMContentLoaded", function () {
     closebutton.addEventListener("click", function () {
         mobilMenu.style.display = "none";
     })
+
+    function closemenu() {
+        if(mobilMenu){
+            mobilMenu.style.display = "none";
+        }
+    }
+
+    if(menuButton){
+        menuButton.addEventListener("click", function(){
+            if(mobilMenu){
+                mobilMenu.style.display = "block";
+            }
+        })
+    }
+
+    if (closeButton) {
+        closeButton.addEventListener("click", closeMenu);
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", closeMenu);
+    }); 
 
     links.forEach(link => {
         link.addEventListener("click", function (event) {
