@@ -28,11 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (closeButton) {
-        closeButton.addEventListener("click", closeMenu);
+        closeButton.addEventListener("click", closemenu);
     }
 
     navLinks.forEach(link => {
-        link.addEventListener("click", closeMenu);
+        link.addEventListener("click", closemenu);
     }); 
 
     links.forEach(link => {
