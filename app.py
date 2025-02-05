@@ -14,5 +14,13 @@ def aboutme():
 def projects():
     return render_template("projects.html")
 
+@app.route("/home")
+def home():
+    return render_template("home.html")
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
 if __name__ == "__main__":
     app.run(port= 3023, debug=True)
